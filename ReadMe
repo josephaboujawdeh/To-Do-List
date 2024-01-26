@@ -1,0 +1,16 @@
+I am using MAMP 6.8 for mac or it can be WAMP for windows
+
+PHPMYADMIN 5.2.0
+MYSQL Server version: 5.7.39 - MySQL Community Server (GPL)
+Protocol version: 10
+
+Import Database
+Please import to the mysql the database called todoDB.sql
+
+Copy Paste the files available in any folder you need.
+
+Open your browser and enter the url pointing to the do do list folder.
+ans voila the web app will open
+
+no other installation needed
+Thank You!
