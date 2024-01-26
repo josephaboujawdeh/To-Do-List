@@ -1,0 +1,156 @@
+/* Main body styles */
+body {
+    background-color: #add8e6; /* Soft blue background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the To-Do App */
+.todo-app-container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Increased width */
+}
+
+/* Header styles */
+.app-header {
+    background-color: #58a6ff;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+/* Bold styling for 'My Day' text */
+.app-header h2 {
+    font-weight: bold;
+}
+
+.type-input {
+    /* Styles for the Type input field */
+    margin: 0 10px; /* Adds spacing around the input field */
+    /* Add other styles as necessary */
+}
+
+/* Logo image styling */
+.app-header img {
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Date text styling */
+.app-date {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Task input field styling */
+.task-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #333;
+    margin-right: 10px; /* Spacing between the input field and the button */
+}
+
+/* Add Task button styling */
+.add-task-btn {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Hover effect for the Add Task button */
+.add-task-btn:hover {
+    background-color: #444;
+}
+
+/* Task list styles */
+ul {
+    padding-left: 0;
+}
+
+/* Individual task styles */
+ul li {
+    list-style: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    color: #333;
+    display: flex; /* Align task and delete button on the same line */
+    justify-content: space-between; /* Space between task and delete button */
+    align-items: center;
+}
+
+/* Delete link styling */
+ul li a {
+    color: #ff4081;
+    margin-left: 10px; /* Spacing between the task and delete */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 767px) {
+    .todo-app-container {
+        margin: 20px;
+        max-width: 100%;
+    }
+}
+
+    .task-input {
+        flex: 1; /* Allows input to fill available space */
+    }
+
+    .add-task-btn {
+        flex-shrink: 0; /* Prevents button from shrinking */
+    }
+
+    .task-input {
+        /* Adjust the styles for the task input field */
+        width: 100%; /* Ensure it takes up all the available space */
+        /* Add other styles as necessary */
+    }
+    
+    .add-task-btn {
+        /* Styles for the add task button */
+        width: 100%; /* Stretch the button to fill the container */
+    }
+/* Form inline adjustments for responsive layout */
+.form-inline .task-input {
+    flex-grow: 1; /* Ensures input takes up available space */
+    margin-right: 10px; /* Ensures spacing between input and button */
+}
+
+/* Add Task button responsive styling */
+.form-inline .add-task-btn {
+    white-space: nowrap; /* Ensures text in the button doesn't wrap */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+    .form-inline .task-input,
+    .form-inline .add-task-btn {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 10px; /* Spacing between stacked input and button */
+    }
+    .form-inline .add-task-btn {
+        margin-bottom: 0; /* Removes bottom margin for the button */
+    }
+}
